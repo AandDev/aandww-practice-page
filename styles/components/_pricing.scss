@@ -1,0 +1,78 @@
+.pricing-sec {
+    .pricing-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .pricing-text {
+            text-align: center;
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+        .pricing-card-box {
+            margin-top: 3em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: 1024px) {
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            .pricing-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 2em;
+                background-color: $light;
+                box-shadow: 1px 1px 10px $l-shadow;
+                border-radius: 30px;
+                padding: 2em 2.5em;
+                transition: all 0.3s;
+                @media screen and (min-width: 768px) {
+                    width: 400px;
+                }
+                @media screen and (min-width: 1024px) {
+                    width: 30%;
+                }
+                h4 {
+                    font-size: 3em;
+                    color: $main-rs;
+                    text-align: center;
+                }
+                h5 {
+                    font-size: 1.5em;
+                    color: $main-bl;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                    margin-top: 1em;
+                    font-size: 1.2em;
+                }
+                .card-details-box {
+                    margin: 0 auto;
+                    margin-top: 3em;
+                    li {
+                        margin-top: 0.5em;
+                        i {
+                            margin-right: 8px;
+                            color: $main-gn;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    border: 8px dashed $main-bl;
+                    box-shadow: none;
+                }
+                &:hover {
+                    box-shadow: 0 0 20px $main-bl;
+                }
+            }
+        }
+    }
+}

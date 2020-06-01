@@ -1,0 +1,82 @@
+.services-sec {
+    .services-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .services-item1, .services-item2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2em;
+            @media screen and (min-width: 1024px) {
+                flex-flow: row wrap;
+            }
+            .services-img-box {
+                width: 100%;
+                @media screen and (min-width: 1024px) {
+                    width: 50%;
+                }
+                .services-img {
+                    width: 100%;
+                }
+            }
+            .services-text-box {
+                width: 100%;
+                @media screen and (min-width: 1024px) {
+                    width: 40%;
+                }
+                .services-text {
+                    margin-bottom: 1.5em;
+                    text-align: center;
+                    @media screen and (min-width: 1024px) {
+                        text-align: left;
+                    }
+                    h2 {
+                        color: $main-rs;
+                        margin-bottom: 0.5em;
+                        font-size: 1.7em;
+                    }
+                }
+                .services-acordeon {
+                    overflow: hidden;
+                    .acordeon-title {
+                        width: 100%;
+                        padding: 5px 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: $main-rs;
+                        border-radius: 25px;
+                        color: $light;
+                        margin: 1em 0;
+                        .acordeon-btn {
+                            color: $light;
+                            background: none;
+                            border: none;
+                            font-weight: bold;
+                            font-size: 1.5em;
+                            padding: 0 10px;
+                            outline: none;
+                            cursor: pointer;
+                        }
+                    }
+                    .acordeon-text1, .acordeon-text2 {
+                        display: block;
+                        width: 90%;
+                        text-align: center;
+                        margin: 0 auto;
+                        max-height: 0;
+                        transition: all 0.3s;
+                    }
+                    .acordeon-open {
+                        max-height: 11em;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.clients-sec {
+    .clients-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid $main-rs;
+        border-radius: 30px;
+        padding: 50px 0;
+        h2 {
+            color: $main-gn;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+}

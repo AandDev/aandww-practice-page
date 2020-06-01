@@ -1,0 +1,55 @@
+.contact-sec {
+    .contact-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 1024px) {
+            flex-flow: row wrap;
+        }
+        .contact-img-box {
+            width: 100%;
+            @media screen and (min-width: 1024px) {
+                width: 50%;
+            }
+            .contact-img {
+                width: 100%;
+            }
+        }
+        .contact-text {
+            text-align: center;
+            @media screen and (min-width: 1024px) {
+                width: 40%;
+                text-align: left;
+            }
+            h4 {
+                color: $main-bl;
+                font-size: 1.2em;
+            }
+            h2 {
+                color: $main-rs;
+                font-size: 1.5em;
+                margin-bottom: 1.5em;
+            }
+        }
+        .contact-btn {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 1.5em;
+            background-color: $main-rs;
+            border-radius: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            &:hover {
+                background-color: rgba($color: $main_rs, $alpha: 0.7);
+                transform: translateY(-1px);
+            }
+            a {
+                display: block;
+                color: $l-txt;
+                padding: 10px;
+            }
+        }
+    }
+}
