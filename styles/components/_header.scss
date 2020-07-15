@@ -18,6 +18,9 @@
         transition: all 0.4s;
         z-index: 99;
         @media screen and (min-width: 1024px) {
+            padding: 0 60px;
+        }
+        @media screen and (min-width: 1200px) {
             padding: 0 150px;
         }
         .logo {
@@ -132,6 +135,10 @@
         margin: 0 auto;
         @media screen and (min-width: 1024px) {
             flex-flow: row wrap;
+            margin-top: 3rem;
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 0 auto;
         }
         .banner-img-box {
             width: 100%;

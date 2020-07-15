@@ -1,4 +1,18 @@
 .services-sec {
+    position: relative;
+    .services-bg {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        opacity: 0.3;
+        @media screen and (min-width: 1024px) {
+            width: 200px;
+            height: 200px;
+            top: 1rem;
+        }
+    }
     .services-box {
         width: 100%;
         display: flex;
@@ -17,6 +31,7 @@
             }
             .services-img-box {
                 width: 100%;
+                z-index: 5;
                 @media screen and (min-width: 1024px) {
                     width: 50%;
                 }
