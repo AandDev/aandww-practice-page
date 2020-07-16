@@ -3,13 +3,24 @@
     display: flex;
     flex-direction: column;
     padding: 1.5em 2em;
+    position: relative;
+    .circuit-img {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        bottom: 0;
+        right: -.5rem;
+        opacity: .2;
+    }
     @media screen and (min-width: 1024px) {
         padding: 2em 5em 1em 5em;
     }
     .foot-details {
+        text-align: center;
         @media screen and (min-width: 768px) {
-            width: 100%;
+            text-align: left;
             display: flex;
+            width: 100%;
             flex-flow: row wrap;
             justify-content: space-between;
         }
@@ -72,5 +83,6 @@
     .credits-box {
         text-align: center;
         color: $l-txt;
+        z-index: 5;
     }
 }

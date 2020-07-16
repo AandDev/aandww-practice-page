@@ -83,6 +83,12 @@ body a {
 
 @media screen and (min-width: 1024px) {
   .top .nav-bar {
+    padding: 0 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top .nav-bar {
     padding: 0 150px;
   }
 }
@@ -255,6 +261,13 @@ body a {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top .banner {
+    margin: 0 auto;
   }
 }
 
@@ -425,6 +438,27 @@ body a {
   margin-bottom: 0.5em;
 }
 
+.services-sec {
+  position: relative;
+}
+
+.services-sec .services-bg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 1024px) {
+  .services-sec .services-bg {
+    width: 200px;
+    height: 200px;
+    top: 1rem;
+  }
+}
+
 .services-sec .services-box {
   width: 100%;
   display: -webkit-box;
@@ -471,6 +505,7 @@ body a {
 
 .services-sec .services-box .services-item1 .services-img-box, .services-sec .services-box .services-item2 .services-img-box {
   width: 100%;
+  z-index: 5;
 }
 
 @media screen and (min-width: 1024px) {
@@ -926,6 +961,16 @@ body a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1.5em 2em;
+  position: relative;
+}
+
+.bottom .circuit-img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  right: -.5rem;
+  opacity: .2;
 }
 
 @media screen and (min-width: 1024px) {
@@ -934,12 +979,17 @@ body a {
   }
 }
 
+.bottom .foot-details {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .bottom .foot-details {
-    width: 100%;
+    text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -1038,5 +1088,6 @@ body a {
 .bottom .credits-box {
   text-align: center;
   color: #f0f0f0;
+  z-index: 5;
 }
 /*# sourceMappingURL=styles.css.map */
